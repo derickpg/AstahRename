@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension point="com.change_vision.astah.ui.actionSets">
+      <actionSet
+            label="%action_set_label"
+            visible="true"
+            id="derickvinicius.RenameAstah.actionSet">
+         <menu
+               id="RenameAstah"
+               label="%menu_group"
+               path="tool/RenameAstah">
+         </menu>
+         <action
+			   label="%menu_label"
+               icon="icons/sample.gif"
+               class="pluginrename.RenameAction"
+               tooltip="%menu_tooltip"
+               menubarPath="tool/RenameAstah/"
+               id="RenameAstah">
+         </action>
+     </actionSet>
+   </extension>
+</plugin>

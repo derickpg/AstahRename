@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Astah-Edition: all
+Astah-Version: 6.7
+Bnd-LastModified: 1522260735421
+Build-Jdk: 1.8.0_161
+Built-By: derck
+Bundle-Activator: pluginrename.Activator
+Bundle-Description: %bundle.description
+Bundle-ManifestVersion: 2
+Bundle-Name: %bundle.name
+Bundle-SymbolicName: derickvinicius.RenameAstah; singleton:=true
+Bundle-Version: 1.0
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *;scope=compile|runtime;type=!pom
+Embed-Transitive: true
+Export-Package: pluginrename;version="1.0";uses:="com.change_vision.jude
+ .api.inf.ui,org.osgi.framework"
+Import-Package: com.change_vision.jude.api.inf;resolution:=optional,com.
+ change_vision.jude.api.inf.exception;resolution:=optional,com.change_vi
+ sion.jude.api.inf.model;resolution:=optional,com.change_vision.jude.api
+ .inf.project;resolution:=optional,com.change_vision.jude.api.inf.ui;res
+ olution:=optional,javax.swing;resolution:=optional,org.osgi.framework;r
+ esolution:=optional;version="[1.5,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.3.0.201609221906
