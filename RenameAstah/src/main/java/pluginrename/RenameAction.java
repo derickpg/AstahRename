@@ -65,7 +65,11 @@ public class RenameAction implements IPluginActionDelegate {
                         	, "Success", JOptionPane.INFORMATION_MESSAGE);
         	}
         	else {
-        		JOptionPane.showMessageDialog(window.getParent(),
+        		if(nomeclasse.equalsIgnoreCase(novaclasse))
+        			JOptionPane.showMessageDialog(window.getParent(),
+          	              "O novo nome da classe deve ser diferente do atual nome.", "Error", JOptionPane.ERROR_MESSAGE);
+        		else
+        			JOptionPane.showMessageDialog(window.getParent(),
         	              "A classe " + novaclasse + " já existe!", "Error", JOptionPane.ERROR_MESSAGE);
         	}
           }

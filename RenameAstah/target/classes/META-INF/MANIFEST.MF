@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Astah-Edition: all
 Astah-Version: 6.7
-Bnd-LastModified: 1522676689687
+Bnd-LastModified: 1522679567224
 Build-Jdk: 1.8.0_161
 Built-By: derck
 Bundle-Activator: pluginrename.Activator
