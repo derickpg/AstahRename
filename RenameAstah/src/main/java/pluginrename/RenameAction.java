@@ -83,7 +83,7 @@ public class RenameAction implements IPluginActionDelegate {
 	  for (int i = 0; i < op.length; i++) {
 		  String[] is = op[i].getStereotypes();
 		  for (int j = 0; j < is.length; j++) {
-			if (is[j].equals("Create") || is[j].equals("create")) {
+			if ("create".equalsIgnoreCase(is[j])) {
 				op[i].setName(novonome);
 				retorno = true;
 			}
